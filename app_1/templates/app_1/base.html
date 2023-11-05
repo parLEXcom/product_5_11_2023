@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приложение app_1</title>
+</head>
+<body>
+<p>
+    <a href="{% url 'app_1:index' %}">APP_1</a> -
+    <a href="{% url 'app_1:topics' %}">TOPICS</a>
+</p>
+
+<p>
+    <button>
+        <b>Текст написан в базовом шаблоне.</b>
+    </button>
+</p>
+
+ {% block content %}{% endblock content %}
+</body>
+</html>

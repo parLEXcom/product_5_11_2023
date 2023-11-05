@@ -1,0 +1,15 @@
+{% extends "app_1/base.html" %}
+
+{% block content %}
+<p>Topics</p>
+  <ul>
+    {% for top in topics %}
+      <li>{{ top }}</li>
+    {% empty %}
+      <li>Тема еще не создана</li>
+    {% endfor %}
+  </ul>
+
+
+
+{% endblock content %}
