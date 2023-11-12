@@ -3,13 +3,15 @@
 {% block content %}
 <p>Topics</p>
   <ul>
-    {% for top in topics %}
-      <li>{{ top }}</li>
+    {% for topic in topics %}
+      <li>
+        <a href="{% url 'app_1:topic' topic.id %}">{{topic}}</a>
+      </li>
     {% empty %}
       <li>Тема еще не создана</li>
     {% endfor %}
   </ul>
 
-
+<a href="{% url 'app_1:new_topic' %}">Добавить новую тему:</a>
 
 {% endblock content %}

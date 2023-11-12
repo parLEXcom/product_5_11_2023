@@ -1,0 +1,12 @@
+{% extends "app_1/base.html" %}
+
+{% block content %}
+<p>Добавить новую статью!</p>
+   <form action="{% url 'app_1:new_topic' %}" method='post'>
+{% csrf_token %}
+{{ form.as_p }}
+<button name="submit">Добавить статью</button>
+ </form>
+
+ {% endblock content %}
+

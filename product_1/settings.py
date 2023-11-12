@@ -31,8 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #Мои приложения
-    'app_1',
+
 
     # Приложения django по умолчанию.
     'django.contrib.admin',
@@ -41,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Мои приложения
+    'app_1',
 
 
 ]
